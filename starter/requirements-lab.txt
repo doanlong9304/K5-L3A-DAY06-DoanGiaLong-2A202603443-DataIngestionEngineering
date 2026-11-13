@@ -1,0 +1,4 @@
+# Extra dependencies for this lab solution (install after requirements.txt):
+#   python -m pip install -r requirements-lab.txt
+pymupdf==2.1
+google-genai==3.3.0

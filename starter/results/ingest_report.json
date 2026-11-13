@@ -1,0 +1,192 @@
+{
+  "runs": [
+    {
+      "run_at": "2026-11-13T18:37:39+07:00",
+      "embedding": {
+        "provider": "Google Gemini API (google-genai SDK)",
+        "model": "gemini-embedding-001",
+        "dimensions": 768,
+        "document_task_type": "RETRIEVAL_DOCUMENT",
+        "query_task_type": "RETRIEVAL_QUERY",
+        "batch_size": 50,
+        "price_per_1m_tokens_usd": 0.15,
+        "price_note": "Giá trả phí tham khảo của gemini-embedding-001 (cần đối chiếu trang giá Gemini API); free tier = 0 USD."
+      },
+      "store": {
+        "backend": "PostgreSQL 16 + pgvector (docker compose project day6_student_starter)",
+        "table": "lab_chunks",
+        "metric": "cosine distance (<=>), score = 1 - distance",
+        "search": "exact (sequential scan, no ANN index)"
+      },
+      "doc_version": "567993cfb60108a6d21b4dd102cfbad156db78953b6753a07ccf4e202964a6cb",
+      "content_pages": 43,
+      "strategies": {
+        "A": {
+          "spec": {
+            "chunker": "fixed_size",
+            "size": 500,
+            "overlap": 50,
+            "store_as": "A",
+            "filter": false
+          },
+          "chunks": 218,
+          "rows_in_store": 218,
+          "char_length": {
+            "min": 72,
+            "p25": 494.75,
+            "median": 497.0,
+            "p75": 498.0,
+            "max": 499,
+            "mean": 462.9
+          },
+          "total_chars": 100919,
+          "total_tokens": 29930,
+          "tokens_embedded_this_run": 29930,
+          "chunks_embedded_this_run": 218,
+          "embedding_api_calls": 5,
+          "write": {
+            "inserted_or_reembedded": 218,
+            "kept_metadata_refreshed": 0,
+            "deleted_obsolete": 0
+          },
+          "seconds": {
+            "chunking": 0.004,
+            "embedding": 80.54,
+            "db_write": 0.419,
+            "total": 80.96
+          },
+          "cost_usd_if_paid_tier": 0.004489
+        },
+        "B": {
+          "spec": {
+            "chunker": "structure",
+            "max_size": 1200,
+            "store_as": "B",
+            "filter": false
+          },
+          "chunks": 118,
+          "rows_in_store": 118,
+          "char_length": {
+            "min": 133,
+            "p25": 597.75,
+            "median": 888.0,
+            "p75": 1057.0,
+            "max": 1197,
+            "mean": 808.5
+          },
+          "total_chars": 95407,
+          "total_tokens": 28200,
+          "tokens_embedded_this_run": 28200,
+          "chunks_embedded_this_run": 118,
+          "embedding_api_calls": 3,
+          "write": {
+            "inserted_or_reembedded": 118,
+            "kept_metadata_refreshed": 0,
+            "deleted_obsolete": 0
+          },
+          "seconds": {
+            "chunking": 0.004,
+            "embedding": 117.14,
+            "db_write": 0.26,
+            "total": 117.4
+          },
+          "cost_usd_if_paid_tier": 0.00423
+        }
+      }
+    },
+    {
+      "run_at": "2026-11-13T18:41:01+07:00",
+      "embedding": {
+        "provider": "Google Gemini API (google-genai SDK)",
+        "model": "gemini-embedding-001",
+        "dimensions": 768,
+        "document_task_type": "RETRIEVAL_DOCUMENT",
+        "query_task_type": "RETRIEVAL_QUERY",
+        "batch_size": 50,
+        "price_per_1m_tokens_usd": 0.15,
+        "price_note": "Giá trả phí tham khảo của gemini-embedding-001 (cần đối chiếu trang giá Gemini API); free tier = 0 USD."
+      },
+      "store": {
+        "backend": "PostgreSQL 16 + pgvector (docker compose project day6_student_starter)",
+        "table": "lab_chunks",
+        "metric": "cosine distance (<=>), score = 1 - distance",
+        "search": "exact (sequential scan, no ANN index)"
+      },
+      "doc_version": "567993cfb60108a6d21b4dd102cfbad156db78953b6753a07ccf4e202964a6cb",
+      "content_pages": 43,
+      "strategies": {
+        "A": {
+          "spec": {
+            "chunker": "fixed_size",
+            "size": 500,
+            "overlap": 50,
+            "store_as": "A",
+            "filter": false
+          },
+          "chunks": 218,
+          "rows_in_store": 218,
+          "char_length": {
+            "min": 72,
+            "p25": 494.75,
+            "median": 497.0,
+            "p75": 498.0,
+            "max": 499,
+            "mean": 462.9
+          },
+          "total_chars": 100919,
+          "total_tokens": 29930,
+          "tokens_embedded_this_run": 0,
+          "chunks_embedded_this_run": 0,
+          "embedding_api_calls": 0,
+          "write": {
+            "inserted_or_reembedded": 0,
+            "kept_metadata_refreshed": 218,
+            "deleted_obsolete": 0
+          },
+          "seconds": {
+            "chunking": 0.004,
+            "embedding": 0.0,
+            "db_write": 0.239,
+            "total": 0.24
+          },
+          "cost_usd_if_paid_tier": 0.0
+        },
+        "B": {
+          "spec": {
+            "chunker": "structure",
+            "max_size": 1200,
+            "store_as": "B",
+            "filter": false
+          },
+          "chunks": 118,
+          "rows_in_store": 118,
+          "char_length": {
+            "min": 133,
+            "p25": 597.75,
+            "median": 888.0,
+            "p75": 1057.0,
+            "max": 1197,
+            "mean": 808.5
+          },
+          "total_chars": 95407,
+          "total_tokens": 28200,
+          "tokens_embedded_this_run": 0,
+          "chunks_embedded_this_run": 0,
+          "embedding_api_calls": 0,
+          "write": {
+            "inserted_or_reembedded": 0,
+            "kept_metadata_refreshed": 118,
+            "deleted_obsolete": 0
+          },
+          "seconds": {
+            "chunking": 0.003,
+            "embedding": 0.0,
+            "db_write": 0.096,
+            "total": 0.1
+          },
+          "cost_usd_if_paid_tier": 0.0
+        }
+      }
+    }
+  ]
+}

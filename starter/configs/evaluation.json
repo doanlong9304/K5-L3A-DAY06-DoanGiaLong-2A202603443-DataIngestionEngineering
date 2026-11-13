@@ -1,0 +1,23 @@
+{
+  "fixed_before_running": "2026-11-13, trước khi chạy bất kỳ câu test nào",
+  "top_k": 3,
+  "benchmark": "data/benchmark.json",
+  "hit_definition": "Một chunk là hit khi document_id = gold_source_id, trang gold nằm trong [page, page_end] của chunk, và evidence_quote (gộp khoảng trắng) là chuỗi con của text chunk. Hit@1 = top-1 hit; Evidence Hit@3 = có ít nhất một hit trong top-3. Báo số câu/tổng câu, tách dev/test.",
+  "evidence_split_check": "Bổ sung (không thay định nghĩa chính): nếu không chunk nào chứa đủ evidence nhưng ghép text top-3 theo vị trí thì chứa đủ, ghi lỗi 'evidence_split'.",
+  "filter_policy": "Chỉ C áp dụng filter, và chỉ với câu có trường filter; câu không có filter thì C chạy không lọc (ghi filter_applied=false). Tuân thủ filter = cả 3 kết quả top-3 có chapter đúng giá trị filter; báo trên số câu có filter, N/A nếu không có.",
+  "coherence_positions": {
+    "method": "10 vị trí cố định: điểm giữa (theo ký tự) phần nội dung của 10 trang được tính đầu tiên (trang 1–10). Với mỗi chiến lược, chấm chunk đầu tiên (theo char_start) bao phủ vị trí đó. C dùng chung chunk với B nên điểm coherence của C = B.",
+    "scale": "0 = bị cắt giữa ý/thiếu chủ thể làm không hiểu; 1 = hiểu một phần, thiếu ngữ cảnh; 2 = tự hiểu được và giữ trọn ý"
+  },
+  "metadata_check": "5 câu test × top-3 mỗi chiến lược: kiểm tra source, page/page_end, chapter, article so với PDF; đếm bản ghi đủ và đúng / tổng.",
+  "grounding_scale": "Trên 5 câu test, chấm top-3 gộp lại: 0 = không có bằng chứng; 1 = có nhưng thiếu điều kiện/ngữ cảnh cần thiết; 2 = đủ để trả lời và truy nguồn.",
+  "selection_criteria": [
+    "1. Evidence Hit@3 trên test (cao hơn tốt hơn)",
+    "2. Grounding trung bình trên test",
+    "3. Hit@1 trên test",
+    "4. Coherence trung bình",
+    "5. Tài nguyên: số chunk, token, thời gian ingest (ít hơn tốt hơn)",
+    "Dev dùng để quan sát lỗi; không chỉnh chiến lược theo kết quả test."
+  ],
+  "labeling": "Nhãn thủ công (coherence, metadata, grounding) do tác giả chấm bằng cách đọc text chunk so với văn bản nguồn, kèm lý do từng nhãn. Nguy cơ thiên lệch: người chấm biết chiến lược và đã thiết kế benchmark."
+}

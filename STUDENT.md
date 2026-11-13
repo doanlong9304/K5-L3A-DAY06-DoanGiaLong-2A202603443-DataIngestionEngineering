@@ -1,8 +1,8 @@
 # Thông tin học viên
 
-- Họ và tên:
-- MSSV:
-- Lớp: L3A / L3B / khác:
-- Chủ đề và corpus:
-- Repo bài nộp:
-- Commit chốt bài:
+- Họ và tên: Đoàn Gia Long
+- MSSV: 2A202603443
+- Lớp: L3A
+- Chủ đề và corpus: LUẬT ĐẦU TƯ số 143/2025/QH15
+- Repo bài nộp: https://github.com/doanlong9304/K5-L3A-Day06-2A202603443-DataIngestionEngineering.git
+- Commit chốt bài: nộp bài Lab Day 06 - DataIngestionEngineering

@@ -1,0 +1,25 @@
+2026-11-13 18:37:41,219 WARNING src.gemini_embedder: Embedding HTTP 429, retry 1 in 5s
+2026-11-13 18:37:46,659 WARNING src.gemini_embedder: Embedding HTTP 429, retry 2 in 10s
+2026-11-13 18:37:57,085 WARNING src.gemini_embedder: Embedding HTTP 429, retry 3 in 20s
+2026-11-13 18:38:21,135 WARNING src.gemini_embedder: Embedding HTTP 429, retry 1 in 5s
+2026-11-13 18:38:26,437 WARNING src.gemini_embedder: Embedding HTTP 429, retry 2 in 10s
+2026-11-13 18:38:36,868 WARNING src.gemini_embedder: Embedding HTTP 429, retry 3 in 20s
+2026-11-13 18:39:01,285 INFO pipeline: A: 218 chunks, embedded 218, {'inserted_or_reembedded': 218, 'kept_metadata_refreshed': 0, 'deleted_obsolete': 0}, 81.0s
+2026-11-13 18:39:01,613 WARNING src.gemini_embedder: Embedding HTTP 429, retry 1 in 5s
+2026-11-13 18:39:06,919 WARNING src.gemini_embedder: Embedding HTTP 429, retry 2 in 10s
+2026-11-13 18:39:17,363 WARNING src.gemini_embedder: Embedding HTTP 429, retry 3 in 20s
+2026-11-13 18:39:37,786 WARNING src.gemini_embedder: Embedding HTTP 429, retry 4 in 40s
+2026-11-13 18:40:21,371 WARNING src.gemini_embedder: Embedding HTTP 429, retry 1 in 5s
+2026-11-13 18:40:26,597 WARNING src.gemini_embedder: Embedding HTTP 429, retry 2 in 10s
+2026-11-13 18:40:36,997 WARNING src.gemini_embedder: Embedding HTTP 429, retry 3 in 20s
+2026-11-13 18:40:59,597 INFO pipeline: B: 118 chunks, embedded 118, {'inserted_or_reembedded': 118, 'kept_metadata_refreshed': 0, 'deleted_obsolete': 0}, 117.4s
+2026-11-13 18:40:59,602 INFO pipeline: report written to results/ingest_report.json
+2026-11-13 18:41:02,747 INFO pipeline: A: 218 chunks, embedded 0, {'inserted_or_reembedded': 0, 'kept_metadata_refreshed': 218, 'deleted_obsolete': 0}, 0.2s
+2026-11-13 18:41:03,375 INFO pipeline: B: 118 chunks, embedded 0, {'inserted_or_reembedded': 0, 'kept_metadata_refreshed': 118, 'deleted_obsolete': 0}, 0.1s
+2026-11-13 18:41:03,379 INFO pipeline: report written to results/ingest_report.json
+2026-11-13 18:45:20,009 INFO pipeline: A dev  Hit@1 9/16  Hit@3 12/16  filter N/A  misses ['q05', 'q11', 'q15', 'q16']  split-evidence ['q05', 'q11']
+2026-11-13 18:45:20,009 INFO pipeline: A test Hit@1 4/5  Hit@3 5/5  filter N/A  misses []  split-evidence []
+2026-11-13 18:45:20,009 INFO pipeline: B dev  Hit@1 11/16  Hit@3 15/16  filter N/A  misses ['q16']  split-evidence []
+2026-11-13 18:45:20,009 INFO pipeline: B test Hit@1 4/5  Hit@3 5/5  filter N/A  misses []  split-evidence []
+2026-11-13 18:45:20,009 INFO pipeline: C dev  Hit@1 12/16  Hit@3 16/16  filter 3/3  misses []  split-evidence []
+2026-11-13 18:45:20,009 INFO pipeline: C test Hit@1 5/5  Hit@3 5/5  filter 1/1  misses []  split-evidence []

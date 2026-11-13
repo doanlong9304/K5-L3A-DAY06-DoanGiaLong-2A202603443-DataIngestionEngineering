@@ -1,0 +1,83 @@
+{
+  "grader": "Đoàn Gia Long (tác giả)",
+  "method_note": "Chấm bằng cách đọc text chunk trong trace/mẫu và đối chiếu với PDF đã chuẩn hóa; công cụ hỗ trợ khai báo ở mục Sử dụng AI của báo cáo.",
+  "bias_note": "Người chấm là tác giả, biết chiến lược nào sinh ra chunk và đã thiết kế benchmark; nhãn có thể thiên về B. Các nhãn coherence của B gần như tuyệt đối nên cần người thứ hai kiểm tra nếu có thể.",
+  "source_traces": "results/traces.jsonl (5 câu test × top-3), results/coherence_samples.json",
+
+  "coherence": {
+    "rule": "Chấm chunk bao phủ vị trí: 2 = đơn vị (khoản/điểm/định nghĩa) chứa vị trí còn trọn và rõ chủ thể; 1 = hiểu được một phần (đơn vị bị cắt, thiếu điều kiện hoặc bắt đầu giữa câu làm thiếu ngữ cảnh); 0 = mất chủ thể/ý chính nên không hiểu đúng.",
+    "C_note": "C dùng chung chunk với B nên điểm coherence C = B.",
+    "labels": {
+      "A": [
+        {"position_id": "pos01", "score": 2, "reason": "Định nghĩa 1 (Điều 3) trọn vẹn, có tiêu đề Điều 3; đầu chunk là đuôi Điều 2 và cuối bị cắt ở định nghĩa 3 nhưng không ảnh hưởng vị trí."},
+        {"position_id": "pos02", "score": 2, "reason": "Định nghĩa 12 trọn vẹn và tự giải thích ('... là ...'); chỉ định nghĩa 13 ở cuối bị cắt."},
+        {"position_id": "pos03", "score": 1, "reason": "Khoản 1 Điều 4 trọn nhưng khoản 2 bị cắt giữa câu ('thì thực hiện theo quy định của'), mất kết luận của quy tắc xung đột luật."},
+        {"position_id": "pos04", "score": 1, "reason": "Khoản 6 Điều 4 bị cắt trước điều kiện 'thỏa thuận đó không trái với quy định của pháp luật Việt Nam'; đầu chunk bắt đầu giữa câu khoản 5."},
+        {"position_id": "pos05", "score": 0, "reason": "Danh sách d)–l) không có câu dẫn 'Cấm các hoạt động đầu tư kinh doanh sau đây' nên không biết đây là ngành, nghề bị cấm."},
+        {"position_id": "pos06", "score": 1, "reason": "Câu tại vị trí (khoản 2 Điều 7) đọc được nhưng chunk bắt đầu bằng 'viên.' giữa câu, không có tiêu đề Điều; khoản 4 bị cắt ở điểm b)."},
+        {"position_id": "pos07", "score": 2, "reason": "Khoản 2 Điều 8 (căn cứ công bố danh mục tiếp cận thị trường, điểm a, b) trọn vẹn; chỉ phần đầu/cuối chunk là mảnh câu."},
+        {"position_id": "pos08", "score": 1, "reason": "Có tiêu đề Điều 10 và câu dẫn, nhưng điểm c) tại vị trí bị cắt giữa câu ('tương ứng với số')."},
+        {"position_id": "pos09", "score": 1, "reason": "Khoản 3 Điều 12 dẫn chiếu khoản 2, nhưng chunk bắt đầu giữa khoản 2 nên thiếu điều kiện 'văn bản quy phạm pháp luật mới ban hành ...'."},
+        {"position_id": "pos10", "score": 0, "reason": "Bắt đầu 'được giải quyết thông qua Trọng tài Việt Nam ...' mất chủ thể 'Tranh chấp giữa nhà đầu tư nước ngoài với cơ quan nhà nước'; phần sau lẫn sang Điều 14 Chương III."}
+      ],
+      "B": [
+        {"position_id": "pos01", "score": 2, "reason": "Điều 3 từ tiêu đề đến hết định nghĩa 6, các định nghĩa trọn vẹn."},
+        {"position_id": "pos02", "score": 2, "reason": "'Điều 3 (tiếp)' định nghĩa 12–16 trọn vẹn."},
+        {"position_id": "pos03", "score": 2, "reason": "Điều 4 khoản 1–2 trọn; chunk dừng ở ranh giới điểm a) khoản 3, không ảnh hưởng vị trí."},
+        {"position_id": "pos04", "score": 2, "reason": "'Điều 4 (tiếp)' khoản 5–6 trọn, có đủ điều kiện của khoản 6."},
+        {"position_id": "pos05", "score": 2, "reason": "Điều 6 có câu dẫn 'Cấm ...' và đủ điểm a)–l)."},
+        {"position_id": "pos06", "score": 2, "reason": "'Điều 7 (tiếp)' khoản 2–4 trọn vẹn."},
+        {"position_id": "pos07", "score": 2, "reason": "Điều 8 khoản 1–2 trọn, có tiêu đề Điều."},
+        {"position_id": "pos08", "score": 2, "reason": "Điều 10 khoản 1 đủ điểm a)–g)."},
+        {"position_id": "pos09", "score": 2, "reason": "Điều 12 khoản 1–3 trọn, khoản 3 đọc cùng khoản 2 được dẫn chiếu."},
+        {"position_id": "pos10", "score": 2, "reason": "'Điều 13 (tiếp)' khoản 4 trọn vẹn, đủ chủ thể và ngoại lệ."}
+      ]
+    }
+  },
+
+  "metadata": {
+    "rule": "Bản ghi đủ và đúng khi: source đúng file; [page, page_end] chứa toàn bộ text chunk (đối chiếu trang đã chuẩn hóa); chapter/article đúng và bao trùm nội dung chunk. Chunk trải qua 2 Điều/Chương mà metadata chỉ ghi Điều/Chương đầu bị tính là thiếu.",
+    "checked_records_per_strategy": 15,
+    "errors": {
+      "A": [
+        {"record": "t01 #1 A-33d015d56637a29f", "error": "article=40 nhưng chunk chứa cả đầu Điều 41; tiêu đề bị cắt còn '40. ...'."},
+        {"record": "t01 #3 A-63ae995e6fb3b8ef", "error": "article=6 nhưng chunk chứa cả đầu Điều 7."},
+        {"record": "t04 #3 A-746e5536c2333508", "error": "article=47 nhưng phần lớn chunk là Điều 48."},
+        {"record": "t05 #2 A-b3fba00804b6847d", "error": "chapter/article = null nhưng chunk chứa Chương I, Điều 1–3."},
+        {"record": "t05 #3 A-2535f2378f4f65b3", "error": "article=50 nhưng evidence nằm ở Điều 51 trong cùng chunk."}
+      ],
+      "B": [],
+      "C": []
+    },
+    "notes": "B/C t05 #2 là chunk lời dẫn 'Căn cứ ...' có chapter/article null: đúng, vì phần này nằm trước Chương I. Trang và source đúng ở cả 45 bản ghi.",
+    "usefulness": "chapter giúp lọc phạm vi: ở t01 B (không lọc) xếp Điều 6 (Chương I) lên top-1, C lọc Chương V đưa Điều 40 lên top-1. page/page_end + article giúp truy về đúng khoản trong PDF.",
+    "limitation": "chapter/article lấy theo vị trí đầu chunk: với chunk cố định (A) trải qua ranh giới Điều, metadata sai/thiếu; filter chapter cũng chỉ có ích khi người dùng biết trước phạm vi chương."
+  },
+
+  "grounding": {
+    "rule": "Chấm top-3 gộp: 0 = không có bằng chứng; 1 = có nhưng thiếu điều kiện/ngữ cảnh; 2 = đủ để trả lời và truy nguồn.",
+    "labels": {
+      "A": [
+        {"id": "t01", "score": 2, "reason": "Top-1 chứa đủ 3 khoản Điều 40 (trang 30); top-2/3 là nhiễu Điều 6–7."},
+        {"id": "t02", "score": 2, "reason": "Top-1 chứa định nghĩa 19 'Nhà đầu tư nước ngoài' đầy đủ."},
+        {"id": "t03", "score": 1, "reason": "Top-1 có '24 tháng' nhưng bị cắt trước điều kiện 'mà nhà đầu tư vẫn không hoàn thành mục tiêu ... không thuộc trường hợp được điều chỉnh tiến độ'; phần này không có trong top-3."},
+        {"id": "t04", "score": 2, "reason": "Top-1 chứa điểm b) khoản 3 Điều 48: định kỳ 06 tháng, hằng năm và 3 nơi nhận."},
+        {"id": "t05", "score": 2, "reason": "Top-3 (chunk ghi article=50) chứa đủ khoản 1–3 Điều 51; top-1 chỉ là đuôi khoản 3."}
+      ],
+      "B": [
+        {"id": "t01", "score": 2, "reason": "Điều 40 đầy đủ ở hạng 2; hạng 1 là Điều 6 (đúng với câu hỏi không giới hạn phạm vi nhưng không phải gold Chương V)."},
+        {"id": "t02", "score": 2, "reason": "Top-1 chứa định nghĩa 18–19 trọn vẹn."},
+        {"id": "t03", "score": 2, "reason": "Top-1 chứa trọn điểm b) khoản 2 Điều 36 kèm điều kiện và ngoại lệ điểm đ."},
+        {"id": "t04", "score": 2, "reason": "Top-1 chứa điểm a)–b) khoản 3 Điều 48."},
+        {"id": "t05", "score": 2, "reason": "Top-1 là Điều 51 khoản 1–4, đủ ngày hiệu lực và các ngoại lệ."}
+      ],
+      "C": [
+        {"id": "t01", "score": 2, "reason": "Lọc Chương V: top-1 Điều 40 đầy đủ, không còn nhiễu Chương I."},
+        {"id": "t02", "score": 2, "reason": "Không có filter, giống B."},
+        {"id": "t03", "score": 2, "reason": "Không có filter, giống B."},
+        {"id": "t04", "score": 2, "reason": "Không có filter, giống B."},
+        {"id": "t05", "score": 2, "reason": "Không có filter, giống B."}
+      ]
+    }
+  }
+}

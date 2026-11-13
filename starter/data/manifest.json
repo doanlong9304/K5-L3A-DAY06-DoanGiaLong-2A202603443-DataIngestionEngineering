@@ -1,0 +1,518 @@
+{
+  "source_id": "luat-dau-tu-143-2025-qh15",
+  "title": "Luật Đầu tư",
+  "document_type": "Luật",
+  "version": "143/2025/QH15",
+  "issuer": "Quốc hội khóa XV, Kỳ họp thứ 10",
+  "passed_date_verbatim": "11 tháng 12 năm 2025",
+  "effective_date_verbatim": {
+    "article": "Điều 51. Hiệu lực thi hành",
+    "khoan_1": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 03 năm 2026, trừ trường hợp quy định tại khoản 2 và khoản 3 Điều này.",
+    "khoan_2": "2. Điều 7 và Danh mục ngành, nghề đầu tư kinh doanh có điều kiện quy định tại Phụ lục IV ban hành kèm theo Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2026.",
+    "khoan_3": "3. Khoản 3 Điều 50 của Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026."
+  },
+  "source_path_or_url": {
+    "path": "data/raw/luat143-2025.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/luat143-2025.pdf"
+  },
+  "license_or_permission": "Văn bản quy phạm pháp luật – không thuộc đối tượng bảo hộ quyền tác giả theo Luật Sở hữu trí tuệ Việt Nam; nguồn chính thức chinhphu.vn",
+  "accessed_at": "2026-11-13",
+  "file": {
+    "sha256": "567993cfb60108a6d21b4dd102cfbad156db78953b6753a07ccf4e202964a6cb",
+    "bytes": 1205772,
+    "pdf_metadata": {
+      "format": "PDF 1.5",
+      "title": "QUỐC HỘI",
+      "author": "QH15",
+      "creator": "Microsoft® Word 2013",
+      "producer": "Microsoft® Word 2013",
+      "creationDate": "D:20251227161153+07'00'",
+      "modDate": "D:20251227161153+07'00'"
+    }
+  },
+  "extraction": {
+    "library": "PyMuPDF 2.1",
+    "normalization": "Unicode NFC; gộp khoảng trắng/NBSP trong dòng; strip dòng; bỏ dòng trống; bỏ dòng số trang ở đầu trang",
+    "ocr": "Không dùng (PDF có lớp text; trang trống không chứa ảnh)"
+  },
+  "page_counting_method": "Đếm trang vật lý (1-based) theo PDF. Trang được tính là trang có nội dung Chương/Điều của luật, sau khi loại phần quốc hiệu (trang 1, trước 'Căn cứ...') và phần thông qua + chữ ký (từ 'Luật này được Quốc hội...'), còn >= 200 ký tự. Loại: trang trống, trang Phụ lục (từ dòng 'Phụ lục <số La Mã>' đến hết), trang chỉ có tiêu đề/chữ ký. Số ký tự = len() của text đã chuẩn hóa (ký tự Unicode, gồm cả ký tự xuống dòng).",
+  "physical_pages": 76,
+  "counted_page_count": 43,
+  "excluded_page_count": 33,
+  "counted_pages": [
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p001",
+      "page": 1,
+      "chars_page": 1547,
+      "chars_content": 1440,
+      "trimmed": [
+        {
+          "part": "national_heading",
+          "chars": 106
+        }
+      ]
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p002",
+      "page": 2,
+      "chars_page": 2245,
+      "chars_content": 2245
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p003",
+      "page": 3,
+      "chars_page": 2281,
+      "chars_content": 2281
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p004",
+      "page": 4,
+      "chars_page": 2318,
+      "chars_content": 2318
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p005",
+      "page": 5,
+      "chars_page": 1974,
+      "chars_content": 1974
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p006",
+      "page": 6,
+      "chars_page": 2090,
+      "chars_content": 2090
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p007",
+      "page": 7,
+      "chars_page": 1965,
+      "chars_content": 1965
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p008",
+      "page": 8,
+      "chars_page": 1788,
+      "chars_content": 1788
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p009",
+      "page": 9,
+      "chars_page": 2181,
+      "chars_content": 2181
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p010",
+      "page": 10,
+      "chars_page": 1937,
+      "chars_content": 1937
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p011",
+      "page": 11,
+      "chars_page": 1912,
+      "chars_content": 1912
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p012",
+      "page": 12,
+      "chars_page": 1798,
+      "chars_content": 1798
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p013",
+      "page": 13,
+      "chars_page": 2244,
+      "chars_content": 2244
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p014",
+      "page": 14,
+      "chars_page": 1626,
+      "chars_content": 1626
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p015",
+      "page": 15,
+      "chars_page": 2157,
+      "chars_content": 2157
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p016",
+      "page": 16,
+      "chars_page": 2329,
+      "chars_content": 2329
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p017",
+      "page": 17,
+      "chars_page": 2141,
+      "chars_content": 2141
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p018",
+      "page": 18,
+      "chars_page": 2273,
+      "chars_content": 2273
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p019",
+      "page": 19,
+      "chars_page": 2189,
+      "chars_content": 2189
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p020",
+      "page": 20,
+      "chars_page": 2168,
+      "chars_content": 2168
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p021",
+      "page": 21,
+      "chars_page": 2251,
+      "chars_content": 2251
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p022",
+      "page": 22,
+      "chars_page": 2114,
+      "chars_content": 2114
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p023",
+      "page": 23,
+      "chars_page": 2416,
+      "chars_content": 2416
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p024",
+      "page": 24,
+      "chars_page": 2211,
+      "chars_content": 2211
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p025",
+      "page": 25,
+      "chars_page": 2109,
+      "chars_content": 2109
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p026",
+      "page": 26,
+      "chars_page": 2198,
+      "chars_content": 2198
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p027",
+      "page": 27,
+      "chars_page": 2195,
+      "chars_content": 2195
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p028",
+      "page": 28,
+      "chars_page": 2140,
+      "chars_content": 2140
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p029",
+      "page": 29,
+      "chars_page": 2236,
+      "chars_content": 2236
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p030",
+      "page": 30,
+      "chars_page": 1939,
+      "chars_content": 1939
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p031",
+      "page": 31,
+      "chars_page": 2179,
+      "chars_content": 2179
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p032",
+      "page": 32,
+      "chars_page": 2190,
+      "chars_content": 2190
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p033",
+      "page": 33,
+      "chars_page": 2252,
+      "chars_content": 2252
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p034",
+      "page": 34,
+      "chars_page": 2202,
+      "chars_content": 2202
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p035",
+      "page": 35,
+      "chars_page": 2078,
+      "chars_content": 2078
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p036",
+      "page": 36,
+      "chars_page": 2148,
+      "chars_content": 2148
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p037",
+      "page": 37,
+      "chars_page": 2422,
+      "chars_content": 2422
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p038",
+      "page": 38,
+      "chars_page": 2107,
+      "chars_content": 2107
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p039",
+      "page": 39,
+      "chars_page": 2363,
+      "chars_content": 2363
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p040",
+      "page": 40,
+      "chars_page": 2533,
+      "chars_content": 2533
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p041",
+      "page": 41,
+      "chars_page": 2557,
+      "chars_content": 2557
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p042",
+      "page": 42,
+      "chars_page": 2738,
+      "chars_content": 2738
+    },
+    {
+      "page_id": "luat-dau-tu-143-2025-qh15:p043",
+      "page": 43,
+      "chars_page": 1994,
+      "chars_content": 1838,
+      "trimmed": [
+        {
+          "part": "passage_and_signature",
+          "chars": 155
+        }
+      ]
+    }
+  ],
+  "excluded_pages": [
+    {
+      "page": 44,
+      "reason": "blank",
+      "reason_text": "Trang trống: không có text, không có ảnh (không cần OCR)",
+      "chars_page": 0
+    },
+    {
+      "page": 45,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1366
+    },
+    {
+      "page": 46,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1237
+    },
+    {
+      "page": 47,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1330
+    },
+    {
+      "page": 48,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 753
+    },
+    {
+      "page": 49,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1348
+    },
+    {
+      "page": 50,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1448
+    },
+    {
+      "page": 51,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1354
+    },
+    {
+      "page": 52,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 675
+    },
+    {
+      "page": 53,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 900
+    },
+    {
+      "page": 54,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 989
+    },
+    {
+      "page": 55,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 832
+    },
+    {
+      "page": 56,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 807
+    },
+    {
+      "page": 57,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 767
+    },
+    {
+      "page": 58,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 773
+    },
+    {
+      "page": 59,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 801
+    },
+    {
+      "page": 60,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 942
+    },
+    {
+      "page": 61,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 875
+    },
+    {
+      "page": 62,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 929
+    },
+    {
+      "page": 63,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 988
+    },
+    {
+      "page": 64,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 915
+    },
+    {
+      "page": 65,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 964
+    },
+    {
+      "page": 66,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 331
+    },
+    {
+      "page": 67,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1070
+    },
+    {
+      "page": 68,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1086
+    },
+    {
+      "page": 69,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1463
+    },
+    {
+      "page": 70,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1452
+    },
+    {
+      "page": 71,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1003
+    },
+    {
+      "page": 72,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1279
+    },
+    {
+      "page": 73,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1274
+    },
+    {
+      "page": 74,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1442
+    },
+    {
+      "page": 75,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 1390
+    },
+    {
+      "page": 76,
+      "reason": "appendix",
+      "reason_text": "Trang Phụ lục: bảng danh mục bị trải phẳng khi trích xuất, mất cấu trúc cột",
+      "chars_page": 889
+    }
+  ],
+  "totals": {
+    "chars_content_counted": 92472,
+    "chars_all_pages": 126407
+  }
+}

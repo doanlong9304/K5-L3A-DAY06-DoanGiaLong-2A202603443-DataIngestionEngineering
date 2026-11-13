@@ -1,0 +1,30 @@
+{
+  "corpus": {
+    "document_id": "luat-dau-tu-143-2025-qh15",
+    "pdf": "data/raw/luat143-2025.pdf",
+    "manifest": "data/manifest.json"
+  },
+  "embedding": {
+    "provider": "Google Gemini API (google-genai SDK)",
+    "model": "gemini-embedding-001",
+    "dimensions": 768,
+    "document_task_type": "RETRIEVAL_DOCUMENT",
+    "query_task_type": "RETRIEVAL_QUERY",
+    "batch_size": 50,
+    "price_per_1m_tokens_usd": 0.15,
+    "price_note": "Giá trả phí tham khảo của gemini-embedding-001 (cần đối chiếu trang giá Gemini API); free tier = 0 USD."
+  },
+  "store": {
+    "backend": "PostgreSQL 16 + pgvector (docker compose project day6_student_starter)",
+    "table": "lab_chunks",
+    "metric": "cosine distance (<=>), score = 1 - distance",
+    "search": "exact (sequential scan, no ANN index)"
+  },
+  "strategies": {
+    "A": {"chunker": "fixed_size", "size": 500, "overlap": 50, "store_as": "A", "filter": false},
+    "B": {"chunker": "structure", "max_size": 1200, "store_as": "B", "filter": false},
+    "C": {"chunker": "structure", "max_size": 1200, "store_as": "B", "filter": true,
+          "filter_fields": ["chapter"],
+          "note": "Same chunks/vectors as B; the chapter filter is applied in SQL only when a question provides one."}
+  }
+}
